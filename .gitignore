@@ -81,7 +81,7 @@ Temporary Items
 # Ignore all local history of files
 .history
 .ionide
-.prettierr
+.prettierrc
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,c++
 

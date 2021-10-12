@@ -36,7 +36,6 @@ public:
             else {
                 l2 = l2->next;
             }
-            
         }
         return l1;
     }

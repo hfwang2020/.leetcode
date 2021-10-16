@@ -30,6 +30,7 @@ struct TreeNode {
 };
 
 
+
 // list vector<vector<int>>
 // void showVec(vector<vector<int>>& v) {
 //     int size = v.size();
@@ -95,5 +96,8 @@ struct TreeNode {
 
 
 void printListNode(ListNode* head) {
-    
+    while (head != nullptr) {  
+        cout << head->val << endl;
+        head = head->next;
+    }
 }

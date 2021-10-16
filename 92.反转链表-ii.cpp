@@ -24,23 +24,20 @@
 ListNode* successor = nullptr;
 class Solution {
 public:
-    static ListNode* reverseBetween(ListNode* head, int left, int right) {
+    ListNode* reverseBetween(ListNode* head, int left, int right) {
         int n = right - left + 1;
         ListNode* dummy = new ListNode(-1);
         dummy->next = head;
         ListNode* node = dummy;
-        while (left) {
+        while (--left) {
             node = node->next;
-            left--;
         }
-        reverseN(node->next, n);
+        node->next = reverseN(node->next, n);
         return dummy->next;
     }
 
-    
-    
     // Reverse the first n nodes of the ListNode
-    static ListNode* reverseN(ListNode* head, int n) {
+    ListNode* reverseN(ListNode* head, int n) {
         if (n == 1) {
             successor = head->next;
             return head;

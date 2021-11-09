@@ -18,7 +18,6 @@ public:
         while (j <= len) {
             // if()
         }
-
     }
 };
 // @lc code=end

@@ -30,6 +30,4 @@ public:
     }
 };
 
-
-
 // @lc code=end
